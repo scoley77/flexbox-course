@@ -5,25 +5,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Capstone Nav Bar</title>
+  <link href="nav.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Raleway:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="nav-wrapper">
     <div class="brand-wrap">
-      <h2>S. Coley Tech</h2>
+      <a href="#">S. Coley Tech</a>
     </div>
     <div class="meta-links-wrap">
       <div class="meta-link">
-        <h2>Portfolio</h2>
+        <a href="#">Portfolio</a>
       </div>
       <div class="meta-link">
-        <h2>About</h2>
+        <a href="#">About</a>
       </div>
     </div>
-    <div class="dropdown-btn">
-      <i class="fas fa-bars"></i>
+    <div class="dropdown-wrap">
+      <button class="dropdown-btn" onclick="dropListShow()">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div id="dropdown" class="dropdown-menu">
+        <div class="drop-link">
+          <a href="#">Portfolio</a>
+        </div>
+        <div class="drop-link">
+          <a href="#">About</a>
+        </div>
+        <div class="drop-link">
+          <a href="#">Contact</a>
+        </div>
+      </div>
     </div>
     <div class="contact-wrap">
-      <h2>Contact</h2>
+      <a href="#">Contact</a>
     </div>
   </div>
   <script src="https://kit.fontawesome.com/2823cd3b1b.js" crossorigin="anonymous"></script>
